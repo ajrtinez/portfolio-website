@@ -13,10 +13,13 @@ body {
   color: #33323D;
   font-family: 'Public Sans', sans-serif;
   font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
   line-height: 30px;
 }
 
 h1 {
+  margin: 0px;
   font-family: 'Ibarra Real Nova', serif;
   font-size: 50px;
   font-weight: 700;
@@ -25,6 +28,7 @@ h1 {
 }
 
 h2 {
+  margin: 0px;
   font-family: 'Ibarra Real Nova', serif;
   font-size: 40px;
   font-weight: 700;
@@ -40,6 +44,74 @@ h3 {
   letter-spacing: -0.29px;
 }
 
+a {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #33323D;
+  transition: 0.3s;
+}
+
+a:nth-child(-n + 2) {
+  margin-right: 40px;
+}
+
+a:hover {
+  color: #5FB4A2;
+}
+
 .container {
   max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0 54px 0;
+}
+
+.hero-container {
+  background-image: url("../img/homepage/desktop/image-homepage-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-content {
+  background-color: #FFF;
+  max-width: 456px;
+  padding: 56px 56px 0 0;
+}
+
+.primary-btn {
+  display: flex;
+  align-items: center;
+  background-color: #203A4C;
+  width: 210px;
+  height: 48px;
+}
+
+.icon-btn {
+  background-color: #1D3445;
+  height: 48px;
+  /* padding: 18px 16px 18px 16px; */
+}
+
+.icon-btn img {
+  margin: 18px 16px 18px 16px;
+}
+
+.btn-text {
+  /* padding: 17px 38px 17px 38px; */
+  padding: 0 38px 0 38px;
+  color: #FFF;
+  /* background-color: #203A4C; */
+  border: none;
 }
