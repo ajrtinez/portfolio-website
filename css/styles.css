@@ -161,6 +161,12 @@ a:hover {
   border: 1px solid #33323D;
 }
 
+.secondary-btn:hover {
+  background-color: #33323D;
+  color: #FAFAFA;
+  transition: 0.3s;
+}
+
 /* CONTACT SECTION STYLING ////////////////////////////// */
 
 .contact-container {
