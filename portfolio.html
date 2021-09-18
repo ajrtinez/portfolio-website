@@ -1,54 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | My Projects</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
 
-  Home
-  Portfolio
-  Contact Me
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
 
-  Manage
+    <title>Frontend Mentor | My Projects</title>
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="container">
+      <!-- Top Navigation Bar -->
+      <div class="top-navbar">
+        <a href="#" class="navbar-brand">
+          <img src="img/logo.svg" alt="Logo for Anthony Martinez" />
+        </a>
+        <nav role="navigation" class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="" class="nav-link">Contact</a>
+        </nav>
+      </div>
 
-  This project required me to build a fully responsive landing page to the designs provided. 
-  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, 
-  such as the testimonial slider.
+      <!-- Portfolio Projects Section -->
+      <div class="projects-container">
+        <!-- Project Block -->
 
-  View Project
+        <!-- Project 1 -->
+        <div class="project-block">
+          <div>
+            <img
+              src="img/portfolio/desktop/image-portfolio-manage.jpg"
+              alt="Profile photo of Anthony"
+              class="profile-image"
+            />
+          </div>
+          <div class="projects-content">
+            <h2 class="projects-heading">Manage</h2>
+            <p>
+              This project required me to build a fully responsive landing page
+              to the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              testimonial slider.
+            </p>
+            <a href="#" class="secondary-btn projects-btn">View Project</a>
+          </div>
+        </div>
 
-  Bookmark
+        <!-- Project 2 -->
+        <div class="project-block project-reversed">
+          <div class="projects-content">
+            <h2 class="projects-heading">Bookmark</h2>
+            <p>
+              This project required me to build a fully responsive landing page to
+              the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              testimonial slider.
+            </p>
+            <a href="#" class="secondary-btn projects-btn">View Project</a>
+          </div>
+          <div>
+            <img
+              src="img/portfolio/desktop/image-portfolio-bookmark.jpg"
+              alt="Profile photo of Anthony"
+              class="profile-image"
+            />
+          </div>
+        </div>
 
-  This project required me to build a fully responsive landing page to the designs provided. I 
-  used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such 
-  as the features section.
+        <!-- Project 3 -->
+        <div class="project-block">
+          <div>
+            <img
+              src="img/portfolio/desktop/image-portfolio-insure.jpg"
+              alt="Profile photo of Anthony"
+              class="profile-image"
+            />
+          </div>
+          <div class="projects-content">
+            <h2 class="projects-heading">Insure</h2>
+            <p>
+              This project required me to build a fully responsive landing page
+              to the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              testimonial slider.
+            </p>
+            <a href="#" class="secondary-btn projects-btn">View Project</a>
+          </div>
+        </div>
 
-  View Project
+        <!-- Project 4 -->
+        <div class="project-block project-reversed">
+          <div class="projects-content">
+            <h2 class="projects-heading">Fylo</h2>
+            <p>
+              This project required me to build a fully responsive landing page to
+              the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              testimonial slider.
+            </p>
+            <a href="#" class="secondary-btn projects-btn">View Project</a>
+          </div>
+          <div>
+            <img
+              src="img/portfolio/desktop/image-portfolio-fylo.jpg"
+              alt="Profile photo of Anthony"
+              class="profile-image"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Contact Section -->
+      <div class="container contact-container">
+        <h2>Interested in doing a project together?</h2>
+        <div class="divider"></div>
+        <div>
+          <a href="#" class="secondary-btn">Contact Me</a>
+        </div>
+      </div>
+    </div>
 
-  Insure
-
-  This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive 
-  landing page. The only JavaScript this project required was to enable the toggling of the 
-  mobile navigation.
-
-  View Project
-
-  Fylo
-
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and 
-  built it so that it was fully-responsive. I took a mobile-first approach and used modern 
-  CSS like Flexbox and Grid for layout purposes.
-
-  View Project
-
-  Interested in doing a project together?
-
-  Contact Me
-
-</body>
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer-block">
+          <div class="footer-navbar">
+            <a href="#" class="navbar-brand footer-navbar-brand">
+              <img src="img/logo-white.svg" alt="Logo for Anthony Martinez" />
+            </a>
+            <nav role="navigation" class="nav-menu footer-nav-menu">
+              <a href="" class="nav-link">Home</a>
+              <a href="" class="nav-link">Portfolio</a>
+              <a href="" class="nav-link">Contact</a>
+            </nav>
+          </div>
+          <div class="social-block">
+            <a href="#" class="social-link">
+              <img src="img/icons/github.svg" class="icon" alt="GitHub Icon" />
+            </a>
+            <a href="#" class="social-link">
+              <img src="img/icons/twitter.svg" alt="Twitter Icon" />
+            </a>
+            <a href="#" class="social-link">
+              <img src="img/icons/linkedin.svg" alt="LinkedIn Icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+  </body>
 </html>
