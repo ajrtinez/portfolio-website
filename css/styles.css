@@ -76,12 +76,7 @@ a:hover {
 .container {
   max-width: 68.75rem;
   margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 1.5rem;
-  }
+  padding: 0 1.5rem;
 }
 
 .top-navbar {
