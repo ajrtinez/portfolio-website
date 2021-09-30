@@ -33,8 +33,6 @@ p {
   line-height: 1.875em;
 }
 
-
-
 h1 {
   font-size: 3.125em;
   letter-spacing: -0.028125em;
@@ -64,6 +62,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
 
 .top-navbar a:nth-child(-n + 2) {
   margin-right: 2.5rem;
@@ -225,6 +224,16 @@ a:hover {
   transition: 0.3s;
 }
 
+.inline-link {
+  color: #33323D;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.875em;
+  text-decoration: underline;
+  text-transform: none;
+  letter-spacing: 0px;
+}
+
 @media (max-width: 768px) {
 
   .about-container {
@@ -360,6 +369,8 @@ footer {
 }
 
 .footer-navbar-brand {
+  margin: 0;
+  max-width: 3.125rem;
   margin-right: 3rem;
 }
 
@@ -378,6 +389,7 @@ footer .nav-menu a:nth-child(-n + 2) {
 @media (max-width: 768px) {
 
   footer {
+    padding: 3.5rem 0;
     margin-top: 4rem;
   }
 
@@ -398,6 +410,7 @@ footer .nav-menu a:nth-child(-n + 2) {
 
   .footer-navbar-brand {
     margin: 0 0 3rem 0;
+    max-width: 2.5rem;
   }
 
   footer .footer-nav-menu a:nth-child(-n + 2) {
