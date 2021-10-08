@@ -102,7 +102,7 @@ a:hover {
   }
 
   .top-navbar a:nth-child(-n + 2) {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
   }
 
   #logo {
@@ -331,7 +331,6 @@ a:hover {
 
 .header-3 {
   font-weight: 500;
-  /* margin-bottom: 2rem; */
 }
 
 .project-background .header-3 {
@@ -380,10 +379,93 @@ a:hover {
   color: #96969C;
 }
 
+.project-previous {
+  font-family: 'Ibarra Real Nova', serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1em;
+  letter-spacing: -0.018125em;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+}
+
+.project-previous img {
+  margin-right: 2rem;
+}
+
 .project-next {
+  font-family: 'Ibarra Real Nova', serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1em;
+  letter-spacing: -0.018125em;
+  text-transform: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 50%;
   border-left: 1px solid #DDDCDE;
   text-align: right;
+}
+
+.project-next img {
+  margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+
+  .project-content-container {
+    flex-direction: column;
+    width: 100%;
+    margin: 2.5rem 0 0 0;
+  }
+
+  .project-info {
+    width: 100%;
+  }
+  
+  .project-background {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .info,
+  .info-tags {
+    font-size: 0.813rem;
+  }
+
+  .project-info p:nth-child(2) {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-info p:nth-child(3) {
+    margin-bottom: 0.5rem;
+  }
+
+  .project-previous {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .project-next {
+    flex-direction: column-reverse;
+    align-self: flex-end;
+  }
+
+  .project-previous img {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .project-next img {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  .project-inner {
+    align-self: flex-end;
+  }
 }
 
 /* CONTACT SECTION STYLING ////////////////////////////// */
