@@ -253,6 +253,10 @@ img {
   width: 70%;
 }
 
+.ux-image {
+  width: 75%;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width: 768px) {
@@ -270,11 +274,19 @@ img {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin: 4rem 0 0 0;
+    margin: 8rem 0 0 0;
+  }
+
+  .project-description {
+    margin: 1.5rem 0 0 0;
   }
 
   .logo-image-full {
-    width: 40%;
+    width: 35%;
+  }
+
+  .ux-image {
+    width: 60%;
   }
 }
 
