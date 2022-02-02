@@ -18,6 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Public+Sans:wght@400;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 
     <title>Anthony Martinez | Front-End Developer</title>
   </head>
@@ -30,9 +33,6 @@
           <img src="img/logo.svg" alt="Logo for Anthony Martinez" />
         </a>
         <nav role="navigation" class="nav-menu">
-          <a href="index.html" class="nav-link hover-underline-animation"
-            >Home</a
-          >
           <a href="about.html" class="nav-link hover-underline-animation"
             >About</a
           >
@@ -47,16 +47,10 @@
       <!-- Hero Section -->
       <div class="hero-container">
         <div class="hero-content">
-          <h1>Hi There, I'm Anthony</h1>
-          <p>
-            A freelance designer living in Los Angeles, CA specializing in brand development, product design, web design, creative direction, illustration and iconography.
-          </p>
+          <h1>Hi There, I'm <span class="italic-text">Anthony</span></h1>
+          <p>A designer focused on UI/UX design, visual design and prototyping.</p>
           <div class="hero-navigation">
-            <a href="#ux-section" class="section-link">Product Design</a>
-            <a href="#web-section" class="section-link">Web</a>
-            <a href="#logo-section" class="section-link">Logos</a>
-            <!-- <a href="" class="section-link">Illustrations</a>
-            <a href="" class="section-link">Albums</a> -->
+            <a href="#work-section" class="section-link">See Work</a>
           </div>
         </div>
       </div>
@@ -64,224 +58,16 @@
       <!-- Work Section -->
       <div class="work-container" id="work-section">
         <!-- UX Section -->
-        <div class="ux-section" id="ux-section">
-          <h2>Product Design</h2>
+        <div class="project-section">
+          <h2>Recent Projects</h2>
           <!-- Row 1 -->
-          <div class="projects-grid">
             <div class="project-container">
-              <img
-                class="ux-image"
-                src="img/homepage/desktop/dished-1.png"
-                alt="Dished app sign in screen"
-              />
-              <div class="project-description">
-                <h4>Dished</h4>
-                <p>Recipe app sign in</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                class="ux-image"
-                src="img/homepage/desktop/dished-2.png"
-                alt="Dished app recipe feed"
-              />
-              <div class="project-description">
-                <h4>Dished</h4>
-                <p>Recipe feed</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                class="ux-image"
-                src="img/homepage/desktop/dished-3.png"
-                alt="Dished app recipe directions"
-              />
-              <div class="project-description">
-                <h4>Dished</h4>
-                <p>Recipe directions</p>
-              </div>
-            </div>
-          </div>
-          <!-- Row 2 -->
-          <div class="projects-grid">
-            <div class="project-container">
-              <img
-                class="ux-image"
-                src="img/homepage/desktop/makr-1.png"
-                alt="Makr dating app matches screen"
-              />
-              <div class="project-description">
-                <h4>Makr</h4>
-                <p>Dating app matches screen</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                class="ux-image"
-                src="img/homepage/desktop/makr-2.png"
-                alt="Makr dating app connections screen"
-              />
-              <div class="project-description">
-                <h4>Makr</h4>
-                <p>Dating app connections screen</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                class="ux-image"
-                src="img/homepage/desktop/makr-3.png"
-                alt="Makr dating app profile screen"
-              />
-              <div class="project-description">
-                <h4>Makr</h4>
-                <p>Dating app profile screen</p>
-              </div>
+              <ul>
+                <li><a href="https://ajrtinez.medium.com/ux-the-dating-experience-716f390fe233" target="_blank" class="project-link hover-underline-animation">UX The Dating Experience</a></li>
+              </ul>
             </div>
           </div>
         </div>
-
-        <!-- Web Section -->
-        <div class="web-section" id="web-section">
-          <h2>Web</h2>
-          <!-- Row 1 -->
-          <div class="projects-grid">
-            <div class="project-container">
-              <img
-                class="ux-image"
-                src="img/homepage/desktop/officelite-landing-page.jpg"
-                alt="Makr App"
-              />
-              <div class="project-description">
-                <h4>Officelite</h4>
-                <p>Office software landing page design</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                class="ux-image"
-                src="img/homepage/desktop/meet-landing-page.jpg"
-                alt="Makr App"
-              />
-              <div class="project-description">
-                <h4>Meet</h4>
-                <p>Networking landing page design</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                class="ux-image"
-                src="img/homepage/desktop/alarmco-landing-page.jpg"
-                alt="Makr App"
-              />
-              <div class="project-description">
-                <h4>Alarmco</h4>
-                <p>Security company landing page design</p>
-              </div>
-            </div>
-          </div>
-          <!-- Row 2 -->
-          
-        </div>
-
-        <!-- Logo & Icon Section -->
-        <div class="logo-icon-section" id="logo-section">
-          <h2>Logos & Icons</h2>
-
-          <div class="projects-grid">
-            <div class="project-container">
-              <img
-                src="img/homepage/desktop/eei-logo.svg"
-                alt="Logo for Eason Enterprises"
-                class="logo-image-full"
-              />
-              <div class="project-description">
-                <h4>Eason Enterprises</h4>
-                <p>Corporation</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                src="img/homepage/desktop/eei-logo.svg"
-                alt="Logo for Eason Enterprises"
-                class="logo-image-full"
-              />
-              <div class="project-description">
-                <h4>Eason Enterprises</h4>
-                <p>Corporation</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                src="img/homepage/desktop/eei-logo.svg"
-                alt="Logo for Eason Enterprises"
-                class="logo-image-full"
-              />
-              <div class="project-description">
-                <h4>Eason Enterprises</h4>
-                <p>Corporation</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                src="img/homepage/desktop/eei-logo.svg"
-                alt="Logo for Eason Enterprises"
-                class="logo-image-full"
-              />
-              <div class="project-description">
-                <h4>Eason Enterprises</h4>
-                <p>Corporation</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="projects-grid">
-            <div class="project-container">
-              <img
-                src="img/homepage/desktop/eei-logo.svg"
-                alt="Logo for Eason Enterprises"
-                class="logo-image-full"
-              />
-              <div class="project-description">
-                <h4>Eason Enterprises</h4>
-                <p>Corporation</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                src="img/homepage/desktop/eei-logo.svg"
-                alt="Logo for Eason Enterprises"
-                class="logo-image-full"
-              />
-              <div class="project-description">
-                <h4>Eason Enterprises</h4>
-                <p>Corporation</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                src="img/homepage/desktop/eei-logo.svg"
-                alt="Logo for Eason Enterprises"
-                class="logo-image-full"
-              />
-              <div class="project-description">
-                <h4>Eason Enterprises</h4>
-                <p>Corporation</p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img
-                src="img/homepage/desktop/eei-logo.svg"
-                alt="Logo for Eason Enterprises"
-                class="logo-image-full"
-              />
-              <div class="project-description">
-                <h4>Eason Enterprises</h4>
-                <p>Corporation</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Contact Section -->
       <div class="contact-section">
