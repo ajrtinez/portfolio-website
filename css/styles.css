@@ -237,6 +237,13 @@ img {
   margin-bottom: 10rem;
 }
 
+.project-section p {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin: 3rem 0 8rem 0;
+  width: 70%;
+}
+
 .project-container ul li {
   margin-bottom: 5rem;
 }
@@ -245,7 +252,6 @@ img {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 100;
-  /* font-size: 4em; */
   font-size: 8vw;
   letter-spacing: -0.0225em;
 }
@@ -258,16 +264,18 @@ img {
     margin: 5rem 0 10rem 0;
   }
 
-  /* .project-link {
-    font-size: 2em;
-  } */
-
   .project-container ul li {
     margin-bottom: 2rem;
   }
 
   .project-section h2 {
     margin-bottom: 5rem;
+  }
+
+  .project-section p {
+    font-size: 1.5em;
+    margin: 3rem 0 8rem 0;
+    width: 100%;
   }
 
 }
