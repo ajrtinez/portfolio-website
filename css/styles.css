@@ -227,7 +227,7 @@ img {
 
 }
 
-/* WORK SECTION STYLING ////////////////////////////// */
+/* CASE STUDY SECTION STYLING ////////////////////////////// */
 
 .project-section {
   margin: 20rem 0 0 0;
@@ -282,28 +282,25 @@ img {
 
 /* EXPERIMENTS SECTION STYLING ////////////////////////////// */
 
-.experiments-block {
+.project-experiment {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.experiment-project {
-  width: 48%;
+.project-experiment a {
+  margin: 0 0 8rem 0;
 }
 
 @media (max-width: 768px) {
 
-  .experiments-block {
-    flex-direction: column;
+  .project-experiment a {
+    width: 80%;
   }
 
-  .experiment-project {
-    width: 100%;
-  }
-
-  .experiment-project:nth-child(1n+2) {
-    margin: 4rem 0 0 0;
-  }
+  /* .project-experiment a:nth-child(1n+2) {
+    margin: 8rem 0 0 0;
+  } */
 
 }
 
@@ -371,7 +368,7 @@ img {
 
 .contact-section {
   width: 100%;
-  margin-top: 20rem;
+  margin-top: 12rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
