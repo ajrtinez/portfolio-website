@@ -280,6 +280,33 @@ img {
 
 }
 
+/* EXPERIMENTS SECTION STYLING ////////////////////////////// */
+
+.experiments-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experiment-project {
+  width: 48%;
+}
+
+@media (max-width: 768px) {
+
+  .experiments-block {
+    flex-direction: column;
+  }
+
+  .experiment-project {
+    width: 100%;
+  }
+
+  .experiment-project:nth-child(1n+2) {
+    margin: 4rem 0 0 0;
+  }
+
+}
+
 /* ABOUT PAGE STYLING ////////////////////////////// */
 
 .about-container {
