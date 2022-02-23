@@ -288,19 +288,15 @@ img {
   flex-wrap: wrap;
 }
 
-.project-experiment a {
+.project-experiment video {
   margin: 0 0 8rem 0;
 }
 
 @media (max-width: 768px) {
 
-  .project-experiment a {
+  .project-experiment video {
     width: 80%;
   }
-
-  /* .project-experiment a:nth-child(1n+2) {
-    margin: 8rem 0 0 0;
-  } */
 
 }
 
