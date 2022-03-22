@@ -71,14 +71,16 @@ h1 {
 }
 
 h2 {
-  font-size: 10vw;
+  max-width: 100%;
+  font-size: 2vw;
+  font-weight: 100;
   letter-spacing: -0.0225em;
 }
 
 h3 {
-  font-size: 2.5rem;
+  max-width: 100%;
+  font-size: 6vw;
   letter-spacing: -0.018125em;
-  line-height: 2.8rem;
 }
 
 h4 {
@@ -112,7 +114,7 @@ img {
   color: #F4F4EB;
 }
 
-/* NAVIGATION STYLING ////////////////////////////// */
+/* NAVIGATION STYLING //////////////////////////////////////////////////////////// */
 
 .top-navbar a:nth-child(-n + 1) {
   margin-right: 4.5rem;
@@ -131,7 +133,7 @@ img {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2AEC78;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -175,24 +177,22 @@ img {
 
 }
 
-/* HERO SECTION STYLING ////////////////////////////// */
-
-.hero-navigation {
-  display: flex;
-  flex-wrap: wrap;
-}
+/* HERO SECTION STYLING //////////////////////////////////////////////////////////// */
 
 .section-link {
-  border: 1px solid #F4F4EB;
-  border-radius: 50px;
-  padding: .5rem 1.5rem;
-  margin: 1.5rem 1.5rem 0 0;
-  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121212;
+  background-color: #B6EF92;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  transition: 0.5s;
 }
 
 .section-link:hover {
-  border: 1px solid #2AEC78;
-  background-color: #2AEC78;
+  background-color: #fff;
   color: #121212;
 }
 
@@ -202,10 +202,9 @@ img {
 
 .hero-content {
   width: 100%;
-  margin: 1rem 0 0 0;
+  margin: 10rem 0 0 0;
   padding: 0 0 5rem 0;
   max-width: 69.375;
-  border-bottom: 1px solid #F4F4EB;
 }
 
 .hero-content p {
@@ -219,41 +218,50 @@ img {
 
 @media (max-width: 768px) {
 
+  .hero-content {
+    margin: 1rem 0 0 0;
+  }
+
   .hero-content p {
     font-size: 1.5em;
-    margin: 3rem 0 2rem 0;
+    margin: 1.5rem 0 3rem 0;
     width: 100%;
+  }
+
+  .section-link {
+    font-size: .8rem;
+    text-align: center;
+    padding: 1rem;
+    height: 75px;
+    width: 75px;
   }
 
 }
 
-/* CASE STUDY SECTION STYLING ////////////////////////////// */
+/* CASE STUDY SECTION STYLING //////////////////////////////////////////////////////////// */
 
 .project-section {
-  margin: 20rem 0 0 0;
+  margin: 16rem 0 0 0;
 }
 
 .project-section h2 {
-  margin-bottom: 10rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #F4F4EB;
 }
 
-.project-section p {
-  font-size: 2em;
-  line-height: 1.5em;
-  margin: 3rem 0 8rem 0;
-  width: 70%;
-}
-
-.project-container ul li {
+.project-container {
+  padding: 5.5rem 0 5.5rem 0;
   margin-bottom: 5rem;
+  border-bottom: 1px solid #F4F4EB;
 }
 
-.project-link {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-weight: 100;
-  font-size: 8vw;
-  letter-spacing: -0.0225em;
+.project-title {
+  margin: 0 0 1rem 0;
+}
+
+.project-details {
+  font-size: 1.2em;
+  margin: 0 0 3rem 0;
 }
 
 /* MEDIA QUERY */
@@ -264,43 +272,29 @@ img {
     margin: 5rem 0 10rem 0;
   }
 
-  .project-container ul li {
-    margin-bottom: 2rem;
-  }
-
   .project-section h2 {
-    margin-bottom: 5rem;
+    font-size: 4vw;
+    border-bottom: hidden;
   }
 
-  .project-section p {
-    font-size: 1.5em;
-    margin: 3rem 0 8rem 0;
-    width: 100%;
+  .project-container {
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: hidden;
   }
 
-}
+  .project-title {
+    margin: 0 0 .2rem 0;
+  }
 
-/* EXPERIMENTS SECTION STYLING ////////////////////////////// */
-
-.project-experiment {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.project-experiment video {
-  margin: 0 0 8rem 0;
-}
-
-@media (max-width: 768px) {
-
-  .project-experiment video {
-    width: 80%;
+  .project-details {
+    font-size: 1em;
+    margin: 0 0 1rem 0;
   }
 
 }
 
-/* ABOUT PAGE STYLING ////////////////////////////// */
+/* ABOUT PAGE STYLING //////////////////////////////////////////////////////////// */
 
 .about-container {
   margin-top: 9.375rem;
@@ -309,18 +303,26 @@ img {
   align-items: center;
 }
 
-.about-container img {
+/* .about-container img {
   width: 100%;
   max-width: 33.75rem;
-}
+} */
 
-.about-content {
+/* .about-content {
   max-width: 21.875rem;
   margin: 0 auto;
   padding: 3.125rem 0 3.125rem 0;
+} */
+
+.about-content {
+  max-width: 50%;
+  /* margin: 0 auto; */
+  /* padding: 3.125rem 0 3.125rem 0; */
 }
 
 .about-content p {
+  font-size: 1.5em;
+  line-height: 1.5em;
   margin-top: 2.125rem;
   margin-bottom: 2.25rem;
 }
@@ -336,7 +338,7 @@ img {
 }
 
 .inline-link:hover {
-  color: #2AEC78;
+  color: #B6EF92;
 }
 
 .process-container {
@@ -348,19 +350,25 @@ img {
 @media (max-width: 768px) {
 
   .about-container {
+    margin-top: 1rem;
     flex-direction: column;
   }
 
+  .about-content p {
+    margin-top: 0;
+    margin-bottom: 2.25rem;
+  }
+
   .profile-image {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .about-content {
-    max-width: 33.75rem;
+    max-width: 100%;
   }
 }
 
-/* CONTACT SECTION STYLING ////////////////////////////// */
+/* CONTACT SECTION STYLING //////////////////////////////////////////////////////////// */
 
 .contact-section {
   width: 100%;
@@ -373,6 +381,8 @@ img {
 .contact-section h3 {
   max-width: 40%;
   padding: 0;
+  font-size: 4vw;
+  letter-spacing: -0.018125em;
 }
 
 .divider {
@@ -383,15 +393,15 @@ img {
 }
 
 .contact-btn {
-  border: 1px solid #F4F4EB;
+  background-color: #B6EF92;
   border-radius: 50px;
   padding: .5rem 1.5rem;
-  transition: 0.3s;
+  transition: 0.5s;
+  color: #121212;
 }
 
-.contact-btn:hover:hover {
-  border: 1px solid #2AEC78;
-  background-color: #2AEC78;
+.contact-btn:hover {
+  background-color: #fff;
   color: #121212;
 }
 
@@ -411,13 +421,13 @@ img {
 
   .contact-section h3 {
     max-width: 100%;
-    font-size: 2rem;
+    font-size: 6vw;
     margin-bottom: 4rem;
   }
   
 }
 
-/* FOOTER SECTION STYLING ////////////////////////////// */
+/* FOOTER SECTION STYLING //////////////////////////////////////////////////////////// */
 
 footer {
   margin-top: 9.375rem;
