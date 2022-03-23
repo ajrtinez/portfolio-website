@@ -303,21 +303,8 @@ img {
   align-items: center;
 }
 
-/* .about-container img {
-  width: 100%;
-  max-width: 33.75rem;
-} */
-
-/* .about-content {
-  max-width: 21.875rem;
-  margin: 0 auto;
-  padding: 3.125rem 0 3.125rem 0;
-} */
-
 .about-content {
   max-width: 50%;
-  /* margin: 0 auto; */
-  /* padding: 3.125rem 0 3.125rem 0; */
 }
 
 .about-content p {
